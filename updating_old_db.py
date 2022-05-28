@@ -12,7 +12,7 @@ for i in data_read:
         subtitle=data_read[i]['Subtitle'],
         body=data_read[i]['Body'],
         img_url=data_read[i]['img_url'],
-        author=1,
+        author_id=1,
         date=date.today().strftime("%B %d, %Y")
     )
     db.session.add(new_post)
