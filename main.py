@@ -91,9 +91,6 @@ class Comment(db.Model):
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
 
 
-# db.create_all()
-
-
 
 @app.route('/', methods=['GET','POST'])
 def get_all_posts():
